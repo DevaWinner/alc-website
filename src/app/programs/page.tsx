@@ -31,7 +31,7 @@ export default function ProgramsPage() {
           { href: "/donate", label: "Fund a Learner Now" }
         ]}
         image={{
-          src: "/img/about.jpg",
+          src: "/img/classrom-1.jpeg",
           alt: "ALC learners during a practical session"
         }}
       />
