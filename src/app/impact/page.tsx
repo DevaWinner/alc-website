@@ -27,7 +27,7 @@ export default function ImpactPage() {
           { href: "/programs", label: "Join Programs" },
           { href: "/contact", label: "Partner With ALC" }
         ]}
-        image={{ src: "/img/gallery2.jpeg", alt: "ALC learner and mentor collaboration" }}
+        image={{ src: "/img/gallery2.webp", alt: "ALC learner and mentor collaboration" }}
       />
 
       <section className="callout-band">

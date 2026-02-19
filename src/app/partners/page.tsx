@@ -18,7 +18,7 @@ export default function PartnersPage() {
           { href: "/contact", label: "Contact Leadership" },
           { href: "/donate", label: "Sponsor Programs" }
         ]}
-        image={{ src: "/img/gallery1.jpeg", alt: "ALC classroom collaboration" }}
+        image={{ src: "/img/gallery1.webp", alt: "ALC classroom collaboration" }}
       />
 
       <Section

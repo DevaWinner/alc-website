@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
+import { defaultBlurDataURL } from "@/lib/image";
 
 type Action = {
   readonly href: string;
@@ -59,7 +60,17 @@ export function PageHero({ eyebrow, title, description, actions, image }: PageHe
 
         {image ? (
           <div className="page-hero-image reveal-up reveal-delay-2">
-            <Image src={image.src} alt={image.alt} width={680} height={460} priority />
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={680}
+              height={460}
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={82}
+              placeholder="blur"
+              blurDataURL={defaultBlurDataURL}
+            />
           </div>
         ) : null}
       </div>

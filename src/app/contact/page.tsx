@@ -22,7 +22,7 @@ export default function ContactPage() {
           { href: siteConfig.contact.phoneHref, label: "Message by Phone" },
           { href: "/programs", label: "See Programs First" }
         ]}
-        image={{ src: "/img/gallery4.jpeg", alt: "ALC classroom environment" }}
+        image={{ src: "/img/gallery4.webp", alt: "ALC classroom environment" }}
       />
 
       <Section

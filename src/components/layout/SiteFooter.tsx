@@ -70,6 +70,7 @@ export function SiteFooter() {
                 width={96}
                 height={72}
                 sizes="96px"
+                quality={60}
               />
             ))}
           </div>

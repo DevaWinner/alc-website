@@ -18,6 +18,7 @@ import {
 } from "@/data/home";
 import { learningOutcomes, programs } from "@/data/programs";
 import { testimonials } from "@/data/testimonials";
+import { defaultBlurDataURL } from "@/lib/image";
 
 const primaryHero = heroSlides[0];
 const secondaryHero = heroSlides[1];
@@ -95,6 +96,10 @@ export default function HomePage() {
               alt={secondaryHero.imageAlt}
               width={640}
               height={420}
+              sizes="(max-width: 1024px) 100vw, 44vw"
+              quality={78}
+              placeholder="blur"
+              blurDataURL={defaultBlurDataURL}
             />
           </div>
         </div>

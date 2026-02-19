@@ -1,6 +1,6 @@
 :root {
-  --font-display: "Space Grotesk", sans-serif;
-  --font-body: "Lora", serif;
+  --font-display: "Trebuchet MS", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
   --bg: #f3f4ef;
   --bg-alt: #ece9dd;

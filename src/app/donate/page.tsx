@@ -24,7 +24,7 @@ export default function DonatePage() {
           { href: "/contact", label: "Pledge Equipment" },
           { href: "/programs", label: "View Program Outcomes" }
         ]}
-        image={{ src: "/img/donation1.jpeg", alt: "ALC classroom session" }}
+        image={{ src: "/img/donation1.webp", alt: "ALC classroom session" }}
       />
 
       <section className="callout-band">

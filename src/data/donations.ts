@@ -16,7 +16,7 @@ export const donationOptions: DonationOption[] = [
     title: "Help Pay for an Instructor",
     summary:
       "There are limited people in Chuuk capable of teaching computer skills, and ALC needs more teachers.",
-    image: "/img/donation1.jpeg",
+    image: "/img/donation1.webp",
     imageAlt: "ALC classroom session with learners practicing typing",
     anchor: "funds",
     icon: "users"
@@ -26,7 +26,7 @@ export const donationOptions: DonationOption[] = [
     title: "Donate Money for a Laptop",
     summary:
       "We need more laptops to open new classrooms in Chuuk and expand learner access.",
-    image: "/img/carousel2.jpeg",
+    image: "/img/carousel2.webp",
     imageAlt: "Recycled laptops prepared for learners",
     anchor: "laptops",
     icon: "laptop"
@@ -36,7 +36,7 @@ export const donationOptions: DonationOption[] = [
     title: "Equip a Classroom",
     summary:
       "Provide practical essentials like extension cords, printer ink, USB drives, and simple repairs.",
-    image: "/img/donation3.jpeg",
+    image: "/img/donation3.webp",
     imageAlt: "Classroom supplies used in computer classes",
     anchor: "classroom",
     icon: "building"

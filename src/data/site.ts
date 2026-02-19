@@ -57,9 +57,9 @@ export const officeHours = [
 ] as const;
 
 export const footerGallery = [
-	{ src: "/img/gallery1.jpeg", alt: "Learners practicing typing" },
-	{ src: "/img/gallery2.jpeg", alt: "Instructor assisting learner" },
-	{ src: "/img/gallery3.jpeg", alt: "Word document class" },
-	{ src: "/img/gallery4.jpeg", alt: "Cloud file organization" },
-	{ src: "/img/gallery5.jpeg", alt: "PowerPoint practice" },
+	{ src: "/img/gallery1.webp", alt: "Learners practicing typing" },
+	{ src: "/img/gallery2.webp", alt: "Instructor assisting learner" },
+	{ src: "/img/gallery3.webp", alt: "Word document class" },
+	{ src: "/img/gallery4.webp", alt: "Cloud file organization" },
+	{ src: "/img/gallery5.webp", alt: "PowerPoint practice" },
 ] as const;

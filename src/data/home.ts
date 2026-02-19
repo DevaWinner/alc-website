@@ -6,7 +6,7 @@ export const heroSlides = [
       "Chuuk is geographically isolated and under-resourced, with limited pathways to opportunity. Accelerated Learning Center is a grassroots, community-powered nonprofit helping youth and young adults build practical skills and hope.",
     primaryCta: { href: "/programs", label: "See Mission & Programs" },
     secondaryCta: { href: "/donate", label: "Donate Now" },
-    image: "/img/carousel1.jpeg",
+    image: "/img/carousel1.webp",
     imageAlt: "ALC learners practicing in a classroom"
   },
   {
@@ -16,7 +16,7 @@ export const heroSlides = [
       "ALC equips teens and adults in Chuuk with computer literacy, discipline, and mentoring so learners can communicate, solve problems, and build stronger futures for themselves and their communities.",
     primaryCta: { href: "/programs#pathways", label: "Explore Work Pathways" },
     secondaryCta: { href: "/partners", label: "Partner With ALC" },
-    image: "/img/carousel2.jpeg",
+    image: "/img/carousel2.webp",
     imageAlt: "Mentor guiding a learner through practical tasks"
   }
 ] as const;
