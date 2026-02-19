@@ -1,23 +1,35 @@
-export const contactCards = [
+import type { IconName } from "@/lib/icons";
+
+type ContactCard = {
+  title: string;
+  value: string;
+  href: string;
+  icon: IconName;
+};
+
+export const contactCards: ContactCard[] = [
   {
     title: "WhatsApp / SMS",
-    value: "+691 [XXX] [XXXX]",
-    href: "tel:+6910000000"
+    value: "+1 814 619 5491",
+    href: "tel:+18146195491",
+    icon: "phone"
   },
   {
     title: "Email",
-    value: "info@[your-domain]",
-    href: "mailto:info@[your-domain]"
+    value: "drupper@gmail.com",
+    href: "mailto:drupper@gmail.com",
+    icon: "mail"
   },
   {
     title: "Address",
     value: "Weno, Chuuk State, FSM",
-    href: "https://maps.google.com"
+    href: "https://maps.google.com",
+    icon: "mapPin"
   }
-] as const;
+];
 
 export const contactIntro =
-  "Questions about classes, enrollment, volunteering, or donations? Reach out and we will respond as quickly as possible.";
+  "Questions about mission programs, enrollment, donations, or partnerships? Reach out and we will respond with clear next steps as quickly as possible.";
 
 export const contactResponsePromises = [
   {

@@ -1,4 +1,5 @@
 import { Program } from "@/data/programs";
+import { Icon } from "@/components/ui/Icon";
 
 type ProgramGridProps = {
   items: Program[];
@@ -12,7 +13,12 @@ export function ProgramGrid({ items }: ProgramGridProps) {
           <p className="card-kicker">
             {program.level} · {program.duration}
           </p>
-          <h3>{program.title}</h3>
+          <h3 className="title-with-icon">
+            <span className="icon-badge">
+              <Icon name={program.icon} size={18} />
+            </span>
+            <span>{program.title}</span>
+          </h3>
           <p>{program.summary}</p>
         </article>
       ))}

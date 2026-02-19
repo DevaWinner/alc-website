@@ -1,3 +1,5 @@
+import type { IconName } from "@/lib/icons";
+
 export type DonationOption = {
   id: string;
   title: string;
@@ -5,26 +7,29 @@ export type DonationOption = {
   image: string;
   imageAlt: string;
   anchor: string;
+  icon: IconName;
 };
 
 export const donationOptions: DonationOption[] = [
   {
     id: "funds",
-    title: "Fund a Classroom Seat",
+    title: "Help Pay for an Instructor",
     summary:
-      "Support teaching materials, basic connectivity, power, and maintenance so each session can run reliably.",
+      "There are limited people in Chuuk capable of teaching computer skills, and ALC needs more teachers.",
     image: "/img/donation1.jpeg",
     imageAlt: "ALC classroom session with learners practicing typing",
-    anchor: "funds"
+    anchor: "funds",
+    icon: "users"
   },
   {
     id: "laptops",
-    title: "Donate a Laptop",
+    title: "Donate Money for a Laptop",
     summary:
-      "We accept good-quality recycled laptops. Devices are securely wiped and prepared for learning sessions.",
+      "We need more laptops to open new classrooms in Chuuk and expand learner access.",
     image: "/img/carousel2.jpeg",
     imageAlt: "Recycled laptops prepared for learners",
-    anchor: "laptops"
+    anchor: "laptops",
+    icon: "laptop"
   },
   {
     id: "classroom",
@@ -33,7 +38,8 @@ export const donationOptions: DonationOption[] = [
       "Provide practical essentials like extension cords, printer ink, USB drives, and simple repairs.",
     image: "/img/donation3.jpeg",
     imageAlt: "Classroom supplies used in computer classes",
-    anchor: "classroom"
+    anchor: "classroom",
+    icon: "building"
   }
 ];
 

@@ -17,7 +17,7 @@ export default function DonatePage() {
     <>
       <PageHero
         eyebrow="Donate"
-        title="Give now. Keep classes open and learners progressing."
+        title="Your gift helps the marginalized learn essential computer skills"
         description="Your support funds learner seats, keeps laptops operational, and protects uninterrupted digital-skills delivery in Chuuk."
         actions={[
           { href: "#funds", label: "Fund a Learner Seat" },

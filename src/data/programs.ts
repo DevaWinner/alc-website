@@ -1,110 +1,110 @@
+import type { IconName } from "@/lib/icons";
+
 export type Program = {
   id: string;
   title: string;
   summary: string;
   duration: string;
   level: string;
+  icon: IconName;
 };
 
 export const programs: Program[] = [
   {
-    id: "class-1",
-    title: "Class 1: Hardware & Typing",
+    id: "digital-literacy",
+    title: "Computer & Digital Literacy",
     summary:
-      "Get comfortable with a laptop, mouse, keyboard, folders, and accurate typing habits for daily digital tasks.",
-    duration: "2 weeks",
-    level: "Beginner"
+      "Microsoft Word, PowerPoint, Excel, basic computer operation, internet navigation, email, cybersecurity, and responsible tech use.",
+    duration: "Core track",
+    level: "Mission focus",
+    icon: "laptop"
   },
   {
-    id: "class-2",
-    title: "Class 2: Internet, Email & Cloud",
+    id: "growth-mindset",
+    title: "Self-Discipline & Growth Mindset",
     summary:
-      "Search safely, send and receive email, attach files, and store documents in cloud folders you can find later.",
-    duration: "2 weeks",
-    level: "Beginner"
+      "Daily habits for success, time management, goal setting, resilience, motivation, and confidence building.",
+    duration: "Core track",
+    level: "Mission focus",
+    icon: "target"
   },
   {
-    id: "class-3",
-    title: "Class 3: Microsoft Word",
+    id: "mentoring-coaching",
+    title: "Mentoring & Coaching",
     summary:
-      "Create and format clean documents with headings, images, and page layouts for school, church, and community work.",
-    duration: "2 weeks",
-    level: "Beginner"
-  },
-  {
-    id: "class-4",
-    title: "Class 4: PowerPoint Presentation Basics",
-    summary:
-      "Build simple slide decks with clear flow, visuals, and speaking confidence for presentations.",
-    duration: "2 weeks",
-    level: "Beginner"
-  },
-  {
-    id: "class-5",
-    title: "Class 5: Excel & Data Management",
-    summary:
-      "Create practical spreadsheets, use formulas, and track budgets or attendance with confidence.",
-    duration: "2 weeks",
-    level: "Beginner"
-  },
-  {
-    id: "learner-support",
-    title: "Enrollment & Learner Support",
-    summary:
-      "Low-bandwidth guidance, WhatsApp/SMS enrollment support, and laptop access during sessions when available.",
+      "Each learner is paired with a mentor to set goals, overcome obstacles, stay motivated, and explore education and career opportunities.",
     duration: "Ongoing",
-    level: "All learners"
+    level: "Mission focus",
+    icon: "users"
+  },
+  {
+    id: "entrepreneurship",
+    title: "Entrepreneurship & Small Business Training",
+    summary:
+      "Launch micro-businesses with limited capital, and learn budgeting, marketing, and customer service fundamentals.",
+    duration: "Applied",
+    level: "Mission focus",
+    icon: "briefcase"
+  },
+  {
+    id: "launching-leaders",
+    title: "Launching Leaders",
+    summary:
+      "A leadership and self-improvement program focused on growth mindset, values, time management, and a six-step formula for success.",
+    duration: "Cohort program",
+    level: "Leadership track",
+    icon: "graduationCap"
   }
 ];
 
 export const learningOutcomes = [
-  "Send and reply to email with attachments",
-  "Create polished documents and presentations",
-  "Build and maintain simple spreadsheets",
-  "Organize files and cloud folders confidently",
-  "Prepare for paid FMG project pathways"
+  "Use core digital tools (Word, PowerPoint, Excel, email, internet) with confidence",
+  "Develop discipline, resilience, and practical habits for long-term success",
+  "Set personal and academic goals and follow structured mentoring guidance",
+  "Explore education, work, and entrepreneurship opportunities with direction",
+  "Build confidence to transform personal and community futures"
 ] as const;
 
 export const classSchedule = [
   {
-    track: "Weekday Track",
-    time: "Mon-Fri, 5:30 pm - 7:30 pm",
-    notes: "Best for working adults and youth after school."
+    track: "Core Mission Cohorts",
+    time: "By intake calendar",
+    notes: "Foundational digital literacy and personal-growth instruction for youth and young adults."
   },
   {
-    track: "Saturday Intensive",
-    time: "Sat, 10:00 am - 1:00 pm",
-    notes: "Focused practical sessions with extra lab support."
+    track: "Launching Leaders Sessions",
+    time: "By program schedule",
+    notes: "Structured self-improvement and leadership development modules."
   },
   {
-    track: "Mentor Lab",
-    time: "By arrangement",
-    notes: "Practice hours and coaching for learners transitioning into work tasks."
+    track: "Mentoring Track",
+    time: "Ongoing",
+    notes: "Personalized coaching based on learner goals, interests, and readiness."
   }
 ] as const;
 
 export const programStats = [
-  { value: "5", label: "Core Skill Modules" },
-  { value: "3", label: "Work-Pathway Stages" },
-  { value: "15", label: "Laptops in Rotation" },
-  { value: "1:1", label: "Mentor-Supported Practice" }
+  { value: "4+", label: "Core Mission Tracks", icon: "bookOpen" },
+  { value: "3", label: "Top Challenges Addressed", icon: "target" },
+  { value: "1", label: "State Recognition", icon: "building" },
+  { value: "100%", label: "Youth & Young-Adult Focus", icon: "heart" }
 ] as const;
 
 export const programValueCards = [
   {
-    title: "Beginner-safe learning environment",
+    title: "Mission-first and straightforward",
     detail:
-      "No prior experience required. Lessons are practical, paced, and built around real tasks learners already need."
+      "Equip youth and young adults with essential skills, discipline, and confidence to transform their futures."
   },
   {
-    title: "Clear progression with outcomes",
+    title: "Built for Chuuk realities",
     detail:
-      "Every class adds a specific capability, from email basics to document creation and spreadsheet confidence."
+      "Programs are designed for geographic isolation, under-resourced schooling, and limited opportunity environments."
   },
   {
-    title: "Pathway beyond the classroom",
+    title: "Community-powered support",
     detail:
-      "Graduates can move into mentor labs and FMG-linked projects to build income-ready confidence."
+      "ALC complements church and community efforts to build practical pathways for youth advancement."
   }
 ] as const;
 
@@ -124,31 +124,31 @@ export const enrollmentSteps = [
 ] as const;
 
 export const supporterNotes = [
-  "Donor support keeps laptops available and classes running on schedule",
-  "Equipment contributions reduce learning interruptions and maintenance delays",
-  "Partnerships expand pathways from basic literacy into paid project opportunities"
+  "There are limited instructors in Chuuk capable of teaching computer skills",
+  "Laptop funding is needed to open additional classrooms across Chuuk",
+  "Mission support strengthens mentoring and leadership pathways for long-term change"
 ] as const;
 
 export const programDonorProofBlocks = [
   {
-    metric: "$25",
-    title: "Sponsor one learner seat",
+    metric: "Instructor",
+    title: "Help pay for an instructor",
     detail:
-      "Helps cover class materials, power/connectivity, and guided practice support for a learner."
+      "There are limited people in Chuuk capable of teaching computer skills, and ALC needs more teachers."
   },
   {
-    metric: "$150",
-    title: "Keep one laptop classroom-ready",
+    metric: "Laptop",
+    title: "Donate money for a laptop",
     detail:
-      "Supports maintenance, accessories, and setup so classes run without technical interruptions."
+      "We need more laptops to open new classrooms in Chuuk and reach more learners."
   },
   {
-    metric: "$500",
-    title: "Back a full beginner class cycle",
+    metric: "Classroom",
+    title: "Equip a classroom",
     detail:
-      "Helps fund instruction delivery and core operating support for an entire group of new learners."
+      "Support essential classroom needs so instruction remains stable and practical."
   }
 ] as const;
 
 export const donorUrgencyLine =
-  "Seats fill quickly and equipment wears out. Giving now keeps the next cohort learning on time.";
+  "Learner demand is growing while instructor and equipment capacity remains limited. Give now to expand access.";

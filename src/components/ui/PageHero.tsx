@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Icon } from "@/components/ui/Icon";
 
 type Action = {
   readonly href: string;
@@ -38,7 +39,8 @@ export function PageHero({ eyebrow, title, description, actions, image }: PageHe
                     href={action.href}
                     className={index === 0 ? "btn btn-primary" : "btn btn-ghost"}
                   >
-                    {action.label}
+                    <span>{action.label}</span>
+                    <Icon name={index === 0 ? "arrowRight" : "chevronRight"} size={16} />
                   </a>
                 ) : (
                   <Link
@@ -46,7 +48,8 @@ export function PageHero({ eyebrow, title, description, actions, image }: PageHe
                     href={action.href}
                     className={index === 0 ? "btn btn-primary" : "btn btn-ghost"}
                   >
-                    {action.label}
+                    <span>{action.label}</span>
+                    <Icon name={index === 0 ? "arrowRight" : "chevronRight"} size={16} />
                   </Link>
                 )
               ))}

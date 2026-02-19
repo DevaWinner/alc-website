@@ -41,6 +41,48 @@ a {
   text-decoration: none;
 }
 
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  color: currentColor;
+}
+
+.icon svg {
+  display: block;
+}
+
+.inline-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.icon-badge {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(15, 122, 83, 0.22);
+  background: rgba(15, 122, 83, 0.08);
+  color: var(--primary-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.icon-badge-soft {
+  border-color: rgba(15, 122, 83, 0.14);
+  background: rgba(15, 122, 83, 0.04);
+}
+
+.title-with-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -110,6 +152,9 @@ ol {
 }
 
 .topbar-contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   transition: color 0.2s ease;
 }
 
@@ -136,6 +181,10 @@ ol {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--primary-strong);
+}
+
+.brand-mobile {
+  display: none;
 }
 
 .brand small {
@@ -177,8 +226,13 @@ ol {
   cursor: pointer;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 0.35rem 0.85rem;
+  padding: 0.45rem;
   background: var(--surface);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .nav-mobile summary::-webkit-details-marker {
@@ -301,6 +355,7 @@ ol {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.45rem;
   border-radius: 999px;
   padding: 0.68rem 1.1rem;
   cursor: pointer;
@@ -491,6 +546,8 @@ ol {
   border: 1px solid rgba(15, 122, 83, 0.2);
   border-radius: var(--radius);
   padding: 1.1rem;
+  display: grid;
+  gap: 0.45rem;
 }
 
 .stat-value {
@@ -739,6 +796,14 @@ ol {
   color: #fff;
 }
 
+.site-footer .inline-icon {
+  color: #d3dfd3;
+}
+
+.site-footer p.inline-icon {
+  display: flex;
+}
+
 .footer-links,
 .footer-hours {
   display: grid;
@@ -863,6 +928,14 @@ ol {
 
   .nav-mobile {
     display: block;
+  }
+
+  .brand-desktop {
+    display: none;
+  }
+
+  .brand-mobile {
+    display: inline;
   }
 
   .card-grid-2,

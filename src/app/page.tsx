@@ -102,14 +102,14 @@ export default function HomePage() {
 
       <Section
         id="programs-preview"
-        eyebrow="Programs"
-        title="What You Will Learn"
-        intro="Beginner-friendly classes designed for practical daily outcomes."
+        eyebrow="Mission Programs"
+        title="What We Do"
+        intro="Mission tracks designed to build essential skills, discipline, and confidence."
       >
         <ProgramGrid items={programs.slice(0, 5)} />
         <div className="hero-actions top-gap">
           <Link href="/programs" className="btn btn-ghost">
-            View All Program Details
+            View Mission Details
           </Link>
         </div>
       </Section>

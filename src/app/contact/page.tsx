@@ -1,3 +1,4 @@
+import { Icon } from "@/components/ui/Icon";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import {
@@ -17,8 +18,8 @@ export default function ContactPage() {
         title="Reach ALC fast and get clear next steps"
         description={contactIntro}
         actions={[
-          { href: "mailto:info@[your-domain]", label: "Email ALC" },
-          { href: "tel:+6910000000", label: "Message by Phone" },
+          { href: siteConfig.contact.emailHref, label: "Email ALC" },
+          { href: siteConfig.contact.phoneHref, label: "Message by Phone" },
           { href: "/programs", label: "See Programs First" }
         ]}
         image={{ src: "/img/gallery4.jpeg", alt: "ALC classroom environment" }}
@@ -32,7 +33,10 @@ export default function ContactPage() {
         <div className="card-grid card-grid-3">
           {contactCards.map((card, index) => (
             <article key={card.title} className={`content-card reveal-up reveal-delay-${(index % 3) + 1}`}>
-              <p className="card-kicker">{card.title}</p>
+              <p className="card-kicker inline-icon">
+                <Icon name={card.icon} size={14} />
+                <span>{card.title}</span>
+              </p>
               <a href={card.href} className="inline-strong">
                 {card.value}
               </a>

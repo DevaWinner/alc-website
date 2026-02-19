@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Icon } from "@/components/ui/Icon";
 import {
   footerGallery,
   footerLinks,
@@ -14,9 +15,18 @@ export function SiteFooter() {
       <div className="container footer-grid">
         <section>
           <h3>Our Office</h3>
-          <p>{siteConfig.location}</p>
-          <p>{siteConfig.contact.phone}</p>
-          <p>{siteConfig.contact.email}</p>
+          <p className="inline-icon">
+            <Icon name="mapPin" size={16} />
+            <span>{siteConfig.location}</span>
+          </p>
+          <p className="inline-icon">
+            <Icon name="phone" size={16} />
+            <span>{siteConfig.contact.phone}</span>
+          </p>
+          <p className="inline-icon">
+            <Icon name="mail" size={16} />
+            <span>{siteConfig.contact.email}</span>
+          </p>
           <div className="social-links">
             {socialLinks.map((social) => (
               <a key={social.label} href={social.href} target="_blank" rel="noreferrer">

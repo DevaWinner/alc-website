@@ -1,32 +1,32 @@
 export const impactStats = [
-  { value: "5", label: "Core classes with practical outcomes" },
-  { value: "3+", label: "First emails sent with confidence" },
-  { value: "8", label: "People engaged in FMG-linked opportunities" },
-  { value: "15", label: "Laptops in active classroom rotation" }
+  { value: "Dec 26, 2025", label: "Launching Leaders first graduation", icon: "calendar" },
+  { value: "3", label: "Top systemic challenges addressed", icon: "target" },
+  { value: "1", label: "Community-powered mission in Chuuk", icon: "building" },
+  { value: "Ongoing", label: "Graduate mentoring now active", icon: "messageSquare" }
 ] as const;
 
 export const impactSellingCards = [
   {
-    title: "For learners: confidence you can use immediately",
+    title: "For learners: skills plus self-discipline",
     detail:
-      "Learners leave with skills they apply right away in family, church, school, and community settings."
+      "ALC combines practical digital training with growth mindset, time management, and confidence development."
   },
   {
-    title: "For donors: visible and measurable outcomes",
+    title: "For donors: direct mission alignment",
     detail:
-      "Support translates directly into class continuity, equipment access, and real capability gains."
+      "Support goes to instructor capacity, laptop access, and practical classroom delivery in underserved communities."
   },
   {
-    title: "For partners: a stronger local talent pipeline",
+    title: "For partners: local capability building",
     detail:
-      "Structured learning and mentor labs create dependable progression toward project-ready contributors."
+      "Programs and mentoring strengthen youth readiness for education, enterprise, and community contribution."
   }
 ] as const;
 
 export const impactProofPoints = [
-  "Stories show real daily behavior change, not just attendance",
-  "Testimonials confirm confidence growth from first-time users",
-  "Pathway mentoring extends learning into income-ready practice"
+  "Graduates completed a structured leadership curriculum with practical self-improvement tools",
+  "Remote Chuukese-language instruction enabled access despite geographic isolation",
+  "Post-graduation mentoring now supports long-term follow-through and goal attainment"
 ] as const;
 
 export const impactDonorProofBlocks = [
@@ -51,7 +51,7 @@ export const impactDonorProofBlocks = [
 ] as const;
 
 export const impactAsks = [
-  "Fund learner seats before the next intake begins",
-  "Sponsor laptop readiness so classes stay fully operational",
-  "Partner to scale successful cohorts and pathway transitions"
+  "Help pay for instructors where local teaching capacity is limited",
+  "Fund laptops so additional classrooms can open in Chuuk",
+  "Partner to expand mentoring and leadership cohorts"
 ] as const;

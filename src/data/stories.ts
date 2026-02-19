@@ -8,27 +8,27 @@ export type Story = {
 
 export const stories: Story[] = [
   {
-    title: "First Email, Same-Day Reply",
+    title: "Launching Leaders: First Cohort Graduation",
     summary:
-      "A new learner completed Class 2 and sent a first email to family overseas. Confidence jumped immediately.",
+      "On December 26, 2025, ALC celebrated graduates from the first Launching Leaders class in Chuuk, focused on growth mindset, time management, values, and a six-step success formula.",
     image: "/img/gallery2.jpeg",
-    imageAlt: "Learner practicing email",
-    dateLabel: "August 2025"
+    imageAlt: "Launching Leaders cohort moment",
+    dateLabel: "December 26, 2025"
   },
   {
-    title: "Word Skills for Community Reports",
+    title: "Remote Teaching in Chuukese",
     summary:
-      "Graduates of Class 3 now create formatted reports and letters for church and neighborhood activities.",
+      "Selina Walter delivered the Launching Leaders class remotely from Hawaii in Chuukese, with local logistics coordinated in Chuuk.",
     image: "/img/gallery3.jpeg",
-    imageAlt: "Word processing class",
-    dateLabel: "September 2025"
+    imageAlt: "Remote mentor-led classroom support",
+    dateLabel: "December 2025"
   },
   {
-    title: "Excel for Small Budget Tracking",
+    title: "Mentoring Program Activated",
     summary:
-      "Class 5 learners are using spreadsheets to manage event costs and track contributions with transparency.",
+      "ALC launched mentoring for graduates from computer and Launching Leaders classes, with support tailored to each mentee’s skills, interests, and goals.",
     image: "/img/gallery5.jpeg",
-    imageAlt: "Excel practice session",
-    dateLabel: "October 2025"
+    imageAlt: "Mentoring and follow-up support",
+    dateLabel: "2026 rollout"
   }
 ];

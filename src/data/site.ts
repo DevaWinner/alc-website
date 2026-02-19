@@ -9,25 +9,26 @@ export type SocialLink = {
 };
 
 export const siteConfig = {
-  name: "Accelerated Learning Centers (ALC)",
-  shortName: "Accelerated",
-  tagline: "Building skills and bridging gaps",
+  name: "Accelerated Learning Center (ALC)",
+  shortName: "Accelerated Learning Center",
+  mobileShortName: "ALC",
+  tagline: "Bringing Hope to Chuuk",
   description:
-    "ALC equips teens and adults in Chuuk with practical computer literacy and work pathways through patient, hands-on instruction.",
+    "ALC is a grassroots, community-powered nonprofit in Chuuk equipping youth and young adults with essential digital skills, discipline, and confidence.",
   location: "Weno, Chuuk State, FSM",
   recognitionDate: "July 18, 2025",
   contact: {
     phoneLabel: "WhatsApp / SMS",
-    phone: "+691 [XXX] [XXXX]",
-    phoneHref: "tel:+6910000000",
-    email: "info@[your-domain]",
-    emailHref: "mailto:info@[your-domain]"
+    phone: "+1 814 619 5491",
+    phoneHref: "tel:+18146195491",
+    email: "drupper@gmail.com",
+    emailHref: "mailto:drupper@gmail.com"
   }
 } as const;
 
 export const navigation: NavItem[] = [
   { href: "/", label: "Home" },
-  { href: "/programs", label: "Programs" },
+  { href: "/programs", label: "Mission" },
   { href: "/donate", label: "Donate" },
   { href: "/impact", label: "Impact" },
   { href: "/partners", label: "People & Partners" },
@@ -35,7 +36,7 @@ export const navigation: NavItem[] = [
 ];
 
 export const footerLinks: NavItem[] = [
-  { href: "/programs", label: "Programs & Enroll" },
+  { href: "/programs", label: "Mission & Programs" },
   { href: "/impact", label: "Impact Stories" },
   { href: "/partners", label: "People & Partners" },
   { href: "/donate", label: "Donate" },

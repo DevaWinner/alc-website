@@ -1,19 +1,19 @@
 export const heroSlides = [
   {
-    eyebrow: "Digital literacy with real outcomes",
-    title: "Building skills and bridging gaps",
+    eyebrow: "Bringing Hope to Chuuk",
+    title: "Empowering the Next Generation to Rise Above Poverty",
     summary:
-      "ALC equips teens and adults in Chuuk with practical skills in email, Word, PowerPoint, and Excel through patient, hands-on instruction.",
-    primaryCta: { href: "/programs", label: "See Programs & Enroll" },
-    secondaryCta: { href: "/donate", label: "Donate Laptops or Funds" },
+      "Chuuk is geographically isolated and under-resourced, with limited pathways to opportunity. Accelerated Learning Center is a grassroots, community-powered nonprofit helping youth and young adults build practical skills and hope.",
+    primaryCta: { href: "/programs", label: "See Mission & Programs" },
+    secondaryCta: { href: "/donate", label: "Donate Now" },
     image: "/img/carousel1.jpeg",
     imageAlt: "ALC learners practicing in a classroom"
   },
   {
-    eyebrow: "Pathways to paid work",
-    title: "From classroom to confidence",
+    eyebrow: "Creating Hope Out of Isolation",
+    title: "Building skills and bridging gaps",
     summary:
-      "Skilled members progress into paid Facilities Management Group (FMG) projects across FSM and Guam with mentoring and safety basics.",
+      "ALC equips teens and adults in Chuuk with computer literacy, discipline, and mentoring so learners can communicate, solve problems, and build stronger futures for themselves and their communities.",
     primaryCta: { href: "/programs#pathways", label: "Explore Work Pathways" },
     secondaryCta: { href: "/partners", label: "Partner With ALC" },
     image: "/img/carousel2.jpeg",
@@ -22,33 +22,33 @@ export const heroSlides = [
 ] as const;
 
 export const homeStats = [
-  { value: "15", label: "Laptops in Rotation" },
-  { value: "1", label: "State Recognition" },
-  { value: "5", label: "Core Classes" },
-  { value: "3+", label: "First Emails Sent" }
+  { value: "3", label: "Top Challenges Addressed", icon: "target" },
+  { value: "4+", label: "Core Growth Tracks", icon: "bookOpen" },
+  { value: "1", label: "State Recognition", icon: "building" },
+  { value: "100%", label: "Mission for Youth Advancement", icon: "heart" }
 ] as const;
 
 export const valuePoints = [
-  "Beginner-friendly and step-by-step instruction",
-  "Practical outcomes for daily life and work",
-  "Low-bandwidth learning design",
-  "Mentoring support into paid projects"
+  "Weak education systems leave many youth unprepared for modern careers",
+  "High unemployment and limited local job pathways affect young adults most",
+  "Geographic isolation limits technology access, training, and mentoring",
+  "ALC delivers practical instruction, discipline, and coaching that rebuilds opportunity"
 ] as const;
 
 export const missionCallout =
-  "Approved by Chuuk State on July 18, 2025. Together we help learners email, write, present, and budget with confidence.";
+  "Our mission is straightforward: equip youth and young adults with essential skills, discipline, and confidence to transform their futures.";
 
 export const audiencePaths = [
   {
     id: "learner",
     eyebrow: "For Learners",
-    title: "Start with zero experience",
+    title: "Start where you are",
     summary:
-      "Join beginner-friendly classes that move at your pace and build practical confidence week by week.",
+      "Even with limited prior preparation, you can build practical digital and life skills with step-by-step support.",
     points: [
-      "Hands-on guidance in every class",
-      "Laptop access during sessions when available",
-      "Clear path from basics to work readiness"
+      "Hands-on instruction in digital literacy, discipline, and growth",
+      "Mentoring to stay motivated and overcome obstacles",
+      "Practical pathways to education, work, and enterprise"
     ],
     cta: { href: "/programs", label: "Enroll in Programs" }
   },
@@ -57,11 +57,11 @@ export const audiencePaths = [
     eyebrow: "For Donors",
     title: "Make direct, visible impact",
     summary:
-      "Your contribution goes straight into class access, equipment, and practical support for new learners.",
+      "Your support directly helps marginalized learners access instruction, equipment, and mentoring in Chuuk.",
     points: [
-      "Fund seats and learning materials",
-      "Pledge laptops and classroom essentials",
-      "Support mentoring into paid work pathways"
+      "Help pay for instructors where local teaching capacity is limited",
+      "Donate money for laptops so new classrooms can open",
+      "Support mentoring and leadership programs for long-term growth"
     ],
     cta: { href: "/donate", label: "Support a Learner" }
   }
@@ -69,26 +69,26 @@ export const audiencePaths = [
 
 export const homeOutcomes = [
   {
-    metric: "100%",
-    title: "Practical class focus",
+    metric: "Digital",
+    title: "Essential computer skills",
     detail:
-      "Every session is built around tasks learners can apply immediately in daily life."
+      "Learners build confidence in Microsoft Word, PowerPoint, Excel, internet use, and email."
   },
   {
-    metric: "5",
-    title: "Core learning blocks",
-    detail: "Typing, email, Word, PowerPoint, and Excel delivered as a clear progression."
+    metric: "Mindset",
+    title: "Discipline and growth habits",
+    detail: "Daily habits, time management, goal setting, resilience, and motivation are reinforced."
   },
   {
-    metric: "3",
-    title: "Confidence milestones",
+    metric: "Mentoring",
+    title: "Guided pathways forward",
     detail:
-      "Learners leave able to communicate, create documents, and manage simple data confidently."
+      "Each learner receives encouragement and coaching toward education, work, and purpose."
   }
 ] as const;
 
 export const donorImpactHighlights = [
-  "A laptop donation can support multiple learners each week",
-  "Small monthly giving keeps class cycles consistent",
-  "Equipment support reduces downtime and class interruptions"
+  "There are limited instructors in Chuuk with computer-teaching capacity",
+  "Laptop funding is needed to expand classroom access to more youth",
+  "Consistent donor support keeps mission programs running without interruption"
 ] as const;
