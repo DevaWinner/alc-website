@@ -1,10 +1,12 @@
+import Image from "next/image";
+import Link from "next/link";
 import { PartnerGrid } from "@/components/sections/PartnerGrid";
 import { TeamGrid } from "@/components/sections/TeamGrid";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
-import Link from "next/link";
 import { featuredPartners, partnerCategories } from "@/data/partners";
-import { teamMembers } from "@/data/team";
+import { advisoryMentors, leadershipFeatures, programCoordinators } from "@/data/team";
+import { defaultBlurDataURL } from "@/lib/image";
 
 export default function PartnersPage() {
   return (
@@ -22,12 +24,59 @@ export default function PartnersPage() {
       />
 
       <Section
-        id="people"
+        id="leadership"
         eyebrow="Leadership"
-        title="Team leading instruction, mentoring, and delivery"
-        intro="These are the people accountable for learner progress, class quality, and partner coordination."
+        title="Accelerated Learning Center Co-Founders"
+        intro="Meet the co-founders and board guiding ALC's mission delivery."
+        className="section-tight"
       >
-        <TeamGrid items={teamMembers} />
+        <div className="card-grid card-grid-3 leadership-grid">
+          {leadershipFeatures.map((item, index) => (
+            <article
+              key={item.title}
+              className={`content-card ${
+                item.variant === "portrait"
+                  ? "team-card"
+                  : "leadership-card leadership-card-landscape"
+              } reveal-up reveal-delay-${(index % 3) + 1}`}
+            >
+              <Image
+                src={item.image}
+                alt={item.imageAlt}
+                width={item.variant === "portrait" ? 960 : 1600}
+                height={item.variant === "portrait" ? 1280 : 1200}
+                sizes={
+                  item.variant === "portrait"
+                    ? "(max-width: 760px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    : "(max-width: 760px) 100vw, (max-width: 1024px) 100vw, 66vw"
+                }
+                quality={76}
+                placeholder="blur"
+                blurDataURL={defaultBlurDataURL}
+              />
+              <div className={item.variant === "portrait" ? "" : "leadership-card-copy"}>
+                <h3>{item.title}</h3>
+                <p className="role">{item.detail}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        id="people"
+        title="Program Coordinators"
+        intro="Program coordinators responsible for local delivery and learner support."
+        className="section-tight"
+      >
+        <TeamGrid items={programCoordinators} columns={3} />
+      </Section>
+
+      <Section
+        title="Advisory and Mentors"
+        className="section-tight"
+      >
+        <TeamGrid items={advisoryMentors} columns={3} />
       </Section>
 
       <Section
