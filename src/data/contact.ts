@@ -22,7 +22,7 @@ export const contactCards: ContactCard[] = [
 	},
 	{
 		title: "Address",
-		value: "Weno, Micronesia State, FSM",
+		value: "Weno, Chuuk State, FSM",
 		href: "https://maps.google.com",
 		icon: "mapPin",
 	},

@@ -11,11 +11,11 @@ export type SocialLink = {
 export const siteConfig = {
 	name: "Accelerated Learning Center (ALC)",
 	shortName: "Accelerated Learning Center",
-	mobileShortName: "Accelerated LC",
+	mobileShortName: "Accelerated Learning Center",
 	tagline: "Bringing Hope to Micronesia",
 	description:
 		"ALC is a grassroots, community-powered nonprofit in Micronesia equipping youth and young adults with essential digital skills, discipline, and confidence.",
-	location: "Weno, Micronesia State, FSM",
+	location: "Weno, Chuuk State, FSM",
 	recognitionDate: "July 18, 2025",
 	contact: {
 		phoneLabel: "WhatsApp / SMS",

@@ -45,7 +45,7 @@ export default function ProgramsPage() {
 			<Section
 				eyebrow="Why ALC"
 				title="Creating hope out of isolation"
-				intro={`Recognized by Micronesia State on ${siteConfig.recognitionDate}, ALC complements church and community efforts with practical, youth-focused mission delivery.`}
+				intro={`Recognized by Chuuk State on ${siteConfig.recognitionDate}, ALC complements church and community efforts with practical, youth-focused mission delivery.`}
 				className="section-alt"
 			>
 				<div className="card-grid card-grid-3">
