@@ -654,38 +654,19 @@ ol {
 }
 
 .leadership-grid {
-  align-items: start;
-}
-
-.leadership-grid .leadership-card-landscape {
-  grid-column: span 2;
-}
-
-.leadership-card {
-  overflow: hidden;
-  padding: 0;
-  gap: 0;
-}
-
-.leadership-card img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.leadership-card-portrait img {
-  aspect-ratio: 3 / 4;
-  object-position: center 18%;
-  width: 100%;
-}
-
-.leadership-card-landscape img {
-  aspect-ratio: 16 / 10;
-}
-
-.leadership-card-copy {
-  display: grid;
+  align-items: stretch;
   gap: 0.45rem;
-  padding: 1rem;
+}
+
+.leadership-grid > .content-card {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.leadership-grid .team-card img {
+  height: clamp(19rem, 26vw, 23rem);
+  aspect-ratio: auto;
 }
 
 .role {
@@ -993,7 +974,4 @@ ol {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
-  .leadership-grid .leadership-card-landscape {
-    grid-column: span 1;
-  }
 }

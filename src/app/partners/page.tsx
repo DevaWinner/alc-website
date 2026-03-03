@@ -30,14 +30,14 @@ export default function PartnersPage() {
         intro="Meet the co-founders and board guiding ALC's mission delivery."
         className="section-tight"
       >
-        <div className="card-grid card-grid-3 leadership-grid">
+        <div className="card-grid card-grid-2 leadership-grid">
           {leadershipFeatures.map((item, index) => (
             <article
               key={item.title}
               className={`content-card ${
                 item.variant === "portrait"
                   ? "team-card"
-                  : "leadership-card leadership-card-landscape"
+                  : "team-card board-card"
               } reveal-up reveal-delay-${(index % 3) + 1}`}
             >
               <Image
@@ -47,14 +47,14 @@ export default function PartnersPage() {
                 height={item.variant === "portrait" ? 1280 : 1200}
                 sizes={
                   item.variant === "portrait"
-                    ? "(max-width: 760px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    : "(max-width: 760px) 100vw, (max-width: 1024px) 100vw, 66vw"
+                    ? "(max-width: 760px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                    : "(max-width: 760px) 100vw, (max-width: 1024px) 50vw, 50vw"
                 }
                 quality={76}
                 placeholder="blur"
                 blurDataURL={defaultBlurDataURL}
               />
-              <div className={item.variant === "portrait" ? "" : "leadership-card-copy"}>
+              <div>
                 <h3>{item.title}</h3>
                 <p className="role">{item.detail}</p>
               </div>
@@ -74,6 +74,7 @@ export default function PartnersPage() {
 
       <Section
         title="Advisory and Mentors"
+        intro="Advisory mentors supporting program quality, learner confidence, and long-term follow-through."
         className="section-tight"
       >
         <TeamGrid items={advisoryMentors} columns={3} />
