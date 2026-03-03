@@ -29,7 +29,7 @@ export const siteConfig = {
 
 export const navigation: NavItem[] = [
 	{ href: "/", label: "Home" },
-	{ href: "/programs", label: "Mission" },
+	{ href: "/programs", label: "Programs" },
 	{ href: "/donate", label: "Donate" },
 	{ href: "/impact", label: "Impact" },
 	{ href: "/partners", label: "People & Partners" },

@@ -14,8 +14,21 @@ const baseKeywords = [
 
 const defaultOgImage = "/img/bg-footer.jpg";
 
-export const resolvedSiteUrl =
-	siteConfig.siteUrl.trim() || "http://localhost:3000";
+function normalizeSiteUrl(rawUrl: string) {
+	const trimmed = rawUrl.trim();
+
+	if (!trimmed) {
+		return "http://localhost:3000";
+	}
+
+	const withProtocol = /^https?:\/\//i.test(trimmed)
+		? trimmed
+		: `https://${trimmed}`;
+
+	return withProtocol.replace(/\/+$/, "");
+}
+
+export const resolvedSiteUrl = normalizeSiteUrl(siteConfig.siteUrl);
 
 export function getAbsoluteUrl(path: string) {
 	const normalizedPath = path.startsWith("/") ? path : `/${path}`;
@@ -69,27 +82,27 @@ export function createPageMetadata({
 						"max-video-preview": -1,
 					},
 				},
-		openGraph: {
+			openGraph: {
 			type,
 			url: absoluteUrl,
 			title,
 			description,
 			siteName: siteConfig.shortName,
 			locale: "en_US",
-			images: [
-				{
-					url: defaultOgImage,
-					width: 1920,
-					height: 1080,
-					alt: "Accelerated Learning Center learners in class",
-				},
-			],
-		},
+				images: [
+					{
+						url: getAbsoluteUrl(defaultOgImage),
+						width: 1920,
+						height: 1080,
+						alt: "Accelerated Learning Center learners in class",
+					},
+				],
+			},
 		twitter: {
 			card: "summary_large_image",
 			title,
 			description,
-			images: [defaultOgImage],
+			images: [getAbsoluteUrl(defaultOgImage)],
 		},
 	};
 }

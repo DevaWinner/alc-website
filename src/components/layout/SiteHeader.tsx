@@ -10,6 +10,7 @@ import { navigation, siteConfig } from "@/data/site";
 export function SiteHeader() {
   const pathname = usePathname();
   const mobileNavRef = useRef<HTMLDetailsElement | null>(null);
+  const activePath = pathname || "/";
 
   const closeMobileMenu = () => {
     if (mobileNavRef.current) {
@@ -22,6 +23,14 @@ export function SiteHeader() {
       mobileNavRef.current.open = false;
     }
   }, [pathname]);
+
+  const isActiveNav = (href: string) => {
+    if (href === "/") {
+      return activePath === "/";
+    }
+
+    return activePath === href || activePath.startsWith(`${href}/`);
+  };
 
   return (
     <header className="site-header">
@@ -66,7 +75,12 @@ export function SiteHeader() {
 
         <nav className="nav-desktop" aria-label="Primary">
           {navigation.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={isActiveNav(item.href) ? "is-active" : undefined}
+              aria-current={isActiveNav(item.href) ? "page" : undefined}
+            >
               {item.label}
             </Link>
           ))}
@@ -78,7 +92,13 @@ export function SiteHeader() {
           </summary>
           <nav aria-label="Mobile">
             {navigation.map((item) => (
-              <Link key={item.href} href={item.href} onClick={closeMobileMenu}>
+              <Link
+                key={item.href}
+                href={item.href}
+                className={isActiveNav(item.href) ? "is-active" : undefined}
+                aria-current={isActiveNav(item.href) ? "page" : undefined}
+                onClick={closeMobileMenu}
+              >
                 {item.label}
               </Link>
             ))}

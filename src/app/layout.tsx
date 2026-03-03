@@ -6,8 +6,6 @@ import { siteConfig } from "@/data/site";
 import { getAbsoluteUrl, resolvedSiteUrl } from "@/lib/seo";
 import "./globals.css";
 
-const publicSiteUrl = siteConfig.siteUrl.trim();
-
 const organizationStructuredData = {
   "@context": "https://schema.org",
   "@type": "NonprofitOrganization",
@@ -48,7 +46,7 @@ const websiteStructuredData = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: publicSiteUrl ? new URL(publicSiteUrl) : undefined,
+  metadataBase: new URL(resolvedSiteUrl),
   title: {
     default: `${siteConfig.shortName} | ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.shortName}`
@@ -68,7 +66,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/img/bg-footer.jpg",
+        url: getAbsoluteUrl("/img/bg-footer.jpg"),
         width: 1920,
         height: 1080,
         alt: "Accelerated Learning Center classroom"
@@ -79,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.shortName} | ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ["/img/bg-footer.jpg"]
+    images: [getAbsoluteUrl("/img/bg-footer.jpg")]
   },
   robots: {
     index: true,
