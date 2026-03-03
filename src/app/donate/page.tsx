@@ -11,6 +11,19 @@ import {
 	donationUrgentNeeds,
 } from "@/data/donations";
 import { siteConfig } from "@/data/site";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+	title: "Donate to Support Digital Skills in Micronesia",
+	description:
+		"Support Accelerated Learning Center by funding learner seats, laptop access, and uninterrupted computer-skills delivery for youth and young adults in Chuuk State.",
+	path: "/donate",
+	keywords: [
+		"donate education Micronesia",
+		"fund laptop access",
+		"support youth digital skills",
+	],
+});
 
 export default function DonatePage() {
 	return (

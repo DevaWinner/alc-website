@@ -12,6 +12,7 @@ export const siteConfig = {
 	name: "Accelerated Learning Center (ALC)",
 	shortName: "Accelerated Learning Center",
 	mobileShortName: "Accelerated Learning Center",
+	siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "",
 	tagline: "Bringing Hope to Micronesia",
 	description:
 		"ALC is a grassroots, community-powered nonprofit in Micronesia equipping youth and young adults with essential digital skills, discipline, and confidence.",

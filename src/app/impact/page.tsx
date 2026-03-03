@@ -12,8 +12,21 @@ import {
   impactStats
 } from "@/data/impact";
 import { siteConfig } from "@/data/site";
+import { createPageMetadata } from "@/lib/seo";
 import { stories } from "@/data/stories";
 import { testimonials } from "@/data/testimonials";
+
+export const metadata = createPageMetadata({
+  title: "Impact Stories and Verified Learner Outcomes",
+  description:
+    "See measurable outcomes from ALC programs in Chuuk State, including graduations, learner stories, and donor-to-delivery impact proof.",
+  path: "/impact",
+  keywords: [
+    "impact stories Micronesia",
+    "education outcomes nonprofit",
+    "learner graduation results"
+  ]
+});
 
 export default function ImpactPage() {
   return (

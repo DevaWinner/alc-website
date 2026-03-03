@@ -17,9 +17,22 @@ import {
 import { learningOutcomes, programs } from "@/data/programs";
 import { testimonials } from "@/data/testimonials";
 import { defaultBlurDataURL } from "@/lib/image";
+import { createPageMetadata } from "@/lib/seo";
 
 const primaryHero = heroSlides[0];
 const secondaryHero = heroSlides[1];
+
+export const metadata = createPageMetadata({
+	title: "Digital Skills Training in Chuuk State, Micronesia",
+	description:
+		"Accelerated Learning Center (ALC) helps youth and adults in Chuuk State build computer literacy, discipline, and practical career readiness through hands-on classes and mentoring.",
+	path: "/",
+	keywords: [
+		"computer training Chuuk",
+		"digital literacy Micronesia",
+		"skills training nonprofit",
+	],
+});
 
 export default function HomePage() {
 	return (

@@ -7,6 +7,19 @@ import { Section } from "@/components/ui/Section";
 import { featuredPartners, partnerCategories } from "@/data/partners";
 import { advisoryMentors, leadershipFeatures, programCoordinators } from "@/data/team";
 import { defaultBlurDataURL } from "@/lib/image";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Leadership Team and Partner Network",
+  description:
+    "Meet ALC co-founders, program coordinators, advisory mentors, and partner categories supporting learner outcomes across Chuuk State.",
+  path: "/partners",
+  keywords: [
+    "ALC leadership team",
+    "education partners Micronesia",
+    "community mentorship network"
+  ]
+});
 
 export default function PartnersPage() {
   return (

@@ -9,6 +9,19 @@ import {
   contactResponsePromises
 } from "@/data/contact";
 import { siteConfig } from "@/data/site";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Contact ALC for Enrollment, Donor, or Partner Requests",
+  description:
+    "Contact Accelerated Learning Center by email or phone for enrollment support, donation coordination, sponsorship, and partnership inquiries.",
+  path: "/contact",
+  keywords: [
+    "contact ALC",
+    "enrollment support Chuuk",
+    "donor and partner inquiries"
+  ]
+});
 
 export default function ContactPage() {
   return (

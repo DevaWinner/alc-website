@@ -13,6 +13,19 @@ import {
 	supporterNotes,
 } from "@/data/programs";
 import { siteConfig } from "@/data/site";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+	title: "Mission Programs and Enrollment Pathways",
+	description:
+		"Explore ALC mission programs in Chuuk State: digital literacy, mentoring, leadership development, and practical learner pathways with donor-backed delivery.",
+	path: "/programs",
+	keywords: [
+		"ALC programs",
+		"computer classes Chuuk",
+		"youth training pathways",
+	],
+});
 
 export default function ProgramsPage() {
 	return (
