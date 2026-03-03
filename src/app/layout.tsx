@@ -7,7 +7,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} | ${siteConfig.tagline}`,
-  description: siteConfig.description
+  description: siteConfig.description,
+  icons: {
+    icon: [
+      { url: "/img/accelerated-mark.svg", type: "image/svg+xml" }
+    ],
+    shortcut: "/img/accelerated-mark.svg",
+    apple: "/img/accelerated-mark.svg"
+  }
 };
 
 type RootLayoutProps = {

@@ -1,0 +1,18 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Accelerated logo mark</title>
+  <desc id="desc">Stylized A mark for Accelerated</desc>
+  <defs>
+    <linearGradient id="markGrad" x1="6" y1="46" x2="47" y2="7" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F7A53"/>
+      <stop offset="0.64" stop-color="#20966C"/>
+      <stop offset="1" stop-color="#2E7CB8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2.5" y="2.5" width="51" height="51" rx="13" fill="#F2F7F2"/>
+  <rect x="2.5" y="2.5" width="51" height="51" rx="13" stroke="#C6D6CB"/>
+
+  <path d="M12 40L23 14L34 40H27.5L23 29.6L18.5 40H12Z" fill="url(#markGrad)"/>
+  <path d="M28 30H41" stroke="url(#markGrad)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M26 36H38" stroke="url(#markGrad)" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+</svg>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
@@ -9,14 +10,6 @@ import { navigation, siteConfig } from "@/data/site";
 export function SiteHeader() {
   const pathname = usePathname();
   const mobileNavRef = useRef<HTMLDetailsElement | null>(null);
-
-  const mobileBrand =
-    siteConfig.mobileShortName ||
-    siteConfig.shortName
-      .split(/\s+/)
-      .filter(Boolean)
-      .map((part) => part[0]?.toUpperCase() ?? "")
-      .join("");
 
   const closeMobileMenu = () => {
     if (mobileNavRef.current) {
@@ -51,8 +44,24 @@ export function SiteHeader() {
 
       <div className="nav-shell container">
         <Link href="/" className="brand" aria-label="Accelerated Learning Center home">
-          <span className="brand-desktop">{siteConfig.shortName}</span>
-          <span className="brand-mobile">{mobileBrand}</span>
+          <Image
+            src="/img/accelerated-wordmark.svg"
+            alt=""
+            aria-hidden="true"
+            width={460}
+            height={96}
+            priority
+            className="brand-desktop brand-logo-full"
+          />
+          <Image
+            src="/img/accelerated-wordmark.svg"
+            alt=""
+            aria-hidden="true"
+            width={460}
+            height={96}
+            priority
+            className="brand-mobile brand-logo-full-mobile"
+          />
         </Link>
 
         <nav className="nav-desktop" aria-label="Primary">

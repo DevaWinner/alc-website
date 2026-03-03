@@ -171,16 +171,25 @@ ol {
 }
 
 .brand {
-  display: grid;
-  gap: 0.05rem;
+  display: inline-flex;
+  align-items: center;
   line-height: 1;
+  padding-block: 0.04rem;
 }
 
-.brand span {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--primary-strong);
+.brand-logo-full {
+  width: clamp(12rem, 26vw, 17.5rem);
+  height: auto;
+}
+
+.brand-logo-mark {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.brand-logo-full-mobile {
+  width: 10.5rem;
+  height: auto;
 }
 
 .brand-mobile {
