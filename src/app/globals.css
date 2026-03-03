@@ -667,6 +667,7 @@ ol {
 .leadership-grid .team-card img {
   height: clamp(19rem, 26vw, 23rem);
   aspect-ratio: auto;
+  object-position: center 18%;
 }
 
 .role {
