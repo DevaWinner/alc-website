@@ -18,7 +18,7 @@ function normalizeSiteUrl(rawUrl: string) {
 	const trimmed = rawUrl.trim();
 
 	if (!trimmed) {
-		return "http://localhost:3000";
+		return "https://www.acceleratedlearningcenter.org/";
 	}
 
 	const withProtocol = /^https?:\/\//i.test(trimmed)

@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
 		description:
 			"Accelerated Learning Center equips youth and young adults in Micronesia with practical digital and life skills.",
 		start_url: "/",
-		display: "standalone",
+		display: "browser",
 		background_color: "#F3F4EF",
 		theme_color: "#0F7A53",
 		icons: [
