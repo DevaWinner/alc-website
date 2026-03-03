@@ -6,7 +6,7 @@ const canonicalRoutes = [
 	"/programs",
 	"/donate",
 	"/impact",
-	"/partners",
+	"/team",
 	"/contact",
 ] as const;
 

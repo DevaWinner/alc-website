@@ -34,7 +34,7 @@ export const impactSellingCards = [
 			"Support goes to instructor capacity, laptop access, and practical classroom delivery in underserved communities.",
 	},
 	{
-		title: "For partners: local capability building",
+		title: "For communities: local capability building",
 		detail:
 			"Programs and mentoring strengthen youth readiness for education, enterprise, and community contribution.",
 	},
@@ -70,5 +70,5 @@ export const impactDonorProofBlocks = [
 export const impactAsks = [
 	"Help pay for instructors where local teaching capacity is limited",
 	"Fund laptops so additional classrooms can open in Micronesia",
-	"Partner to expand mentoring and leadership cohorts",
+	"Support expansion of mentoring and leadership cohorts",
 ] as const;

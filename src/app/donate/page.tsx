@@ -120,8 +120,8 @@ export default function DonatePage() {
 					<Link href="/contact" className="btn btn-primary">
 						Confirm Your Gift
 					</Link>
-					<Link href="/partners" className="btn btn-ghost">
-						Become a Sponsor Partner
+					<Link href="/team" className="btn btn-ghost">
+						Meet Program Leadership
 					</Link>
 				</div>
 			</Section>

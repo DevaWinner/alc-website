@@ -29,7 +29,7 @@ export const contactCards: ContactCard[] = [
 ];
 
 export const contactIntro =
-	"Questions about mission programs, enrollment, donations, or partnerships? Reach out and we will respond with clear next steps as quickly as possible.";
+	"Questions about mission programs, enrollment, donations, or sponsorship? Reach out and we will respond with clear next steps as quickly as possible.";
 
 export const contactResponsePromises = [
 	{
@@ -42,7 +42,7 @@ export const contactResponsePromises = [
 		metric: "Clear steps",
 		title: "Actionable follow-up",
 		detail:
-			"We reply with practical next steps for enrollment, giving, or partnership requests.",
+			"We reply with practical next steps for enrollment, giving, or sponsorship requests.",
 	},
 	{
 		metric: "One thread",
@@ -53,7 +53,7 @@ export const contactResponsePromises = [
 ] as const;
 
 export const contactQuickTips = [
-	"State whether you are a learner, donor, partner, or volunteer",
+	"State whether you are a learner, donor, or volunteer",
 	"Include your preferred schedule or support type",
 	"Share the fastest way to reach you back",
 ] as const;
@@ -68,8 +68,8 @@ export const contactRequestTypes = [
 		detail: "Coordinate funds, laptop pledges, or recurring support options.",
 	},
 	{
-		title: "Partnership inquiries",
+		title: "Community support inquiries",
 		detail:
-			"Discuss community, school, church, or employer collaboration opportunities.",
+			"Discuss community, school, church, or employer support opportunities.",
 	},
 ] as const;

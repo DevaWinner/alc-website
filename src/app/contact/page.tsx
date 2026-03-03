@@ -12,14 +12,14 @@ import { siteConfig } from "@/data/site";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Contact ALC for Enrollment, Donor, or Partner Requests",
+  title: "Contact ALC for Enrollment and Donor Requests",
   description:
-    "Contact Accelerated Learning Center by email or phone for enrollment support, donation coordination, sponsorship, and partnership inquiries.",
+    "Contact Accelerated Learning Center by email or phone for enrollment support, donation coordination, sponsorship, and community support inquiries.",
   path: "/contact",
   keywords: [
     "contact ALC",
     "enrollment support Chuuk",
-    "donor and partner inquiries"
+    "donor inquiries"
   ]
 });
 
@@ -126,7 +126,7 @@ export default function ContactPage() {
             </label>
             <label>
               Subject
-              <input type="text" name="subject" placeholder="Enrollment, donation, partnership..." />
+              <input type="text" name="subject" placeholder="Enrollment, donation, sponsorship..." />
             </label>
             <label>
               Message
@@ -141,7 +141,7 @@ export default function ContactPage() {
             <p className="card-kicker">Best practice</p>
             <h3>Use one clear request per message</h3>
             <p>
-              Separate enrollment, donor, and partnership requests into distinct messages so we can
+              Separate enrollment, donor, and support requests into distinct messages so we can
               route and respond faster.
             </p>
             <p>

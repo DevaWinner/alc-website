@@ -38,7 +38,7 @@ export default function ImpactPage() {
         actions={[
           { href: "/donate", label: "Give Now to Expand Impact" },
           { href: "/programs", label: "Join Programs" },
-          { href: "/contact", label: "Partner With ALC" }
+          { href: "/contact", label: "Support the Mission" }
         ]}
         image={{ src: "/img/gallery2.webp", alt: "ALC learner and mentor collaboration" }}
       />
@@ -108,7 +108,7 @@ export default function ImpactPage() {
 
       <Section
         eyebrow="Why this matters"
-        title="A conversion page for learners, donors, and partners"
+        title="A conversion page for learners and donors"
         intro="When support quality rises, learner outcomes accelerate and pathway transitions grow."
       >
         <div className="card-grid card-grid-3">

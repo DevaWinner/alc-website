@@ -15,7 +15,7 @@ export const heroSlides = [
 		summary:
 			"ALC equips teens and adults in Micronesia with computer literacy, discipline, and mentoring so learners can communicate, solve problems, and build stronger futures for themselves and their communities.",
 		primaryCta: { href: "/programs#pathways", label: "Explore Work Pathways" },
-		secondaryCta: { href: "/partners", label: "Partner With Us" },
+		secondaryCta: { href: "/team", label: "Meet the Team" },
 		image: "/img/carousel2.webp",
 		imageAlt: "Mentor guiding a learner through practical tasks",
 	},
