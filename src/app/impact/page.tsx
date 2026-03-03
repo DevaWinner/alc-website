@@ -43,6 +43,7 @@ export default function ImpactPage() {
         eyebrow="At a glance"
         title="Impact indicators you can track now"
         intro="These are active, observable signals of program execution and learner progress."
+        className="impact-glance"
       >
         <StatStrip items={impactStats} />
       </Section>

@@ -1,14 +1,19 @@
 export const impactStats = [
 	{
-		value: "Dec 26, 2025",
-		label: "Launching Leaders first graduation",
+		value: "November 13, 2025",
+		label:
+			"Twelve people (ages 15 to 56) graduated from our first ALC computer skills class",
 		icon: "calendar",
 	},
-	{ value: "3", label: "Top systemic challenges addressed", icon: "target" },
 	{
-		value: "1",
-		label: "Community-powered mission in Micronesia",
-		icon: "building",
+		value: "December 26, 2025",
+		label: "Eight people graduated from the first Launching Leaders class",
+		icon: "calendar",
+	},
+	{
+		value: "December 26, 2025",
+		label: "Launching Leaders first graduation",
+		icon: "calendar",
 	},
 	{
 		value: "Ongoing",

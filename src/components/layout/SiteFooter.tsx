@@ -4,7 +4,6 @@ import { Icon } from "@/components/ui/Icon";
 import {
   footerGallery,
   footerLinks,
-  officeHours,
   siteConfig,
   socialLinks
 } from "@/data/site";
@@ -42,18 +41,6 @@ export function SiteFooter() {
             {footerLinks.map((link) => (
               <li key={link.href}>
                 <Link href={link.href}>{link.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <h3>Hours</h3>
-          <ul className="footer-hours">
-            {officeHours.map((slot) => (
-              <li key={slot.day}>
-                <strong>{slot.day}</strong>
-                <span>{slot.hours}</span>
               </li>
             ))}
           </ul>

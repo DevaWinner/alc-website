@@ -443,8 +443,7 @@ ol {
 .pill-list,
 .impact-list,
 .timeline,
-.footer-links,
-.footer-hours {
+.footer-links {
   list-style: none;
   padding: 0;
 }
@@ -558,6 +557,13 @@ ol {
 
 .stat-label {
   color: var(--text-soft);
+}
+
+.impact-glance .stat-value {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
 }
 
 .pill-list {
@@ -767,7 +773,7 @@ ol {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr 0.8fr 1fr;
+  grid-template-columns: 1.1fr 0.9fr 1fr;
   gap: 1.3rem;
 }
 
@@ -804,19 +810,13 @@ ol {
   display: flex;
 }
 
-.footer-links,
-.footer-hours {
+.footer-links {
   display: grid;
   gap: 0.4rem;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
-}
-
-.footer-hours li {
-  display: grid;
-  gap: 0.1rem;
 }
 
 .footer-gallery {

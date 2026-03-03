@@ -50,12 +50,6 @@ export const socialLinks: SocialLink[] = [
 	{ href: "https://www.linkedin.com/company/[your-handle]", label: "LinkedIn" },
 ];
 
-export const officeHours = [
-	{ day: "Monday - Friday", hours: "09:00 am - 05:00 pm" },
-	{ day: "Saturday", hours: "10:00 am - 01:00 pm" },
-	{ day: "Sunday", hours: "Closed" },
-] as const;
-
 export const footerGallery = [
 	{ src: "/img/gallery1.webp", alt: "Learners practicing typing" },
 	{ src: "/img/gallery2.webp", alt: "Instructor assisting learner" },
