@@ -32,9 +32,7 @@ export default function ContactPage() {
         title="Reach ALC fast and get clear next steps"
         description={contactIntro}
         actions={[
-          { href: siteConfig.contact.emailHref, label: "Email ALC" },
-          { href: siteConfig.contact.phoneHref, label: "Message by Phone" },
-          { href: "/programs", label: "See Programs First" }
+          { href: siteConfig.contact.emailHref, label: "Email ALC" }
         ]}
         image={{ src: "/img/gallery4.webp", alt: "ALC classroom environment" }}
       />
