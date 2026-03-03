@@ -12,10 +12,10 @@ export const siteConfig = {
 	name: "Accelerated Learning Center (ALC)",
 	shortName: "Accelerated Learning Center",
 	mobileShortName: "Accelerated LC",
-	tagline: "Bringing Hope to Chuuk",
+	tagline: "Bringing Hope to Micronesia",
 	description:
-		"ALC is a grassroots, community-powered nonprofit in Chuuk equipping youth and young adults with essential digital skills, discipline, and confidence.",
-	location: "Weno, Chuuk State, FSM",
+		"ALC is a grassroots, community-powered nonprofit in Micronesia equipping youth and young adults with essential digital skills, discipline, and confidence.",
+	location: "Weno, Micronesia State, FSM",
 	recognitionDate: "July 18, 2025",
 	contact: {
 		phoneLabel: "WhatsApp / SMS",
