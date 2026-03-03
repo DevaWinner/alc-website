@@ -42,7 +42,7 @@ export const impactSellingCards = [
 
 export const impactProofPoints = [
 	"Graduates completed a structured leadership curriculum with practical self-improvement tools",
-	"Remote Micronesiaese-language instruction enabled access despite geographic isolation",
+	"Remote micronesia-language instruction enabled access despite geographic isolation",
 	"Post-graduation mentoring now supports long-term follow-through and goal attainment",
 ] as const;
 

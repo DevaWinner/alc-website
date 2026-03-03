@@ -33,7 +33,7 @@ export default function ProgramsPage() {
 			<PageHero
 				eyebrow="Mission"
 				title="Equip youth and young adults with essential skills, discipline, and confidence"
-				description="Our mission is straightforward: help Micronesiaese youth rise above isolation and poverty through practical training, mentoring, and leadership development."
+				description="Our mission is straightforward: help micronesia youth rise above isolation and poverty through practical training, mentoring, and leadership development."
 				actions={[
 					{ href: "/programs#tracks", label: "See What We Do" },
 					{ href: "/contact", label: "Start Enrollment" },

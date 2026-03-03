@@ -16,9 +16,9 @@ export const stories: Story[] = [
 		dateLabel: "December 26, 2025",
 	},
 	{
-		title: "Remote Teaching in Micronesiaese",
+		title: "Remote Teaching in micronesia",
 		summary:
-			"Selina Walter delivered the Launching Leaders class remotely from Hawaii in Micronesiaese, with local logistics coordinated in Micronesia.",
+			"Selina Walter delivered the Launching Leaders class remotely from Hawaii in micronesia, with local logistics coordinated in Micronesia.",
 		image: "/img/gallery3.webp",
 		imageAlt: "Remote mentor-led classroom support",
 		dateLabel: "December 2025",
