@@ -1,4 +1,5 @@
 import { Icon } from "@/components/ui/Icon";
+import { ContactForm } from "@/components/forms/ContactForm";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import {
@@ -112,30 +113,10 @@ export default function ContactPage() {
       <Section
         eyebrow="Message Form"
         title="Send a quick message"
-        intro="Use this form structure for your final backend or form-service integration."
+        intro="Use this form to contact ALC and receive clear, practical next steps."
       >
         <div className="contact-layout">
-          <form className="contact-form" action="#" method="post">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="Your email" />
-            </label>
-            <label>
-              Subject
-              <input type="text" name="subject" placeholder="Enrollment, donation, sponsorship..." />
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows={6} placeholder="Write your message" />
-            </label>
-            <button type="submit" className="btn btn-primary">
-              Submit Message
-            </button>
-          </form>
+          <ContactForm />
 
           <aside className="content-card contact-side">
             <p className="card-kicker">Best practice</p>
