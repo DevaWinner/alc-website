@@ -4,11 +4,8 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import {
 	donationFlow,
-	donationImpact,
 	donationOptions,
 	donationProofBlocks,
-	donationTrustPoints,
-	donationUrgentNeeds,
 } from "@/data/donations";
 import { siteConfig } from "@/data/site";
 import { createPageMetadata } from "@/lib/seo";
@@ -76,11 +73,6 @@ export default function DonatePage() {
 						</article>
 					))}
 				</div>
-				<ul className="impact-list top-gap">
-					{donationUrgentNeeds.map((need) => (
-						<li key={need}>{need}</li>
-					))}
-				</ul>
 			</Section>
 
 			<Section
@@ -99,30 +91,6 @@ export default function DonatePage() {
 							<p>{item.detail}</p>
 						</article>
 					))}
-				</div>
-			</Section>
-
-			<Section
-				eyebrow="Trust & Transparency"
-				title="How we keep donor intent aligned with delivery"
-				intro="ALC keeps giving pathways practical and linked to direct program execution."
-				className="section-alt"
-			>
-				<ul className="pill-list">
-					{donationTrustPoints.map((point) => (
-						<li key={point}>{point}</li>
-					))}
-					{donationImpact.map((impact) => (
-						<li key={impact}>{impact}</li>
-					))}
-				</ul>
-				<div className="hero-actions top-gap">
-					<Link href="/contact" className="btn btn-primary">
-						Confirm Your Gift
-					</Link>
-					<Link href="/team" className="btn btn-ghost">
-						Meet Program Leadership
-					</Link>
 				</div>
 			</Section>
 		</>

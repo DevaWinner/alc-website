@@ -78,18 +78,6 @@ export default function ContactPage() {
       </Section>
 
       <Section
-        eyebrow="Before You Send"
-        title="Include these details for a faster response"
-        intro="The more specific your first message is, the faster we can help."
-      >
-        <ul className="impact-list">
-          {contactQuickTips.map((tip) => (
-            <li key={tip}>{tip}</li>
-          ))}
-        </ul>
-      </Section>
-
-      <Section
         eyebrow="Request Types"
         title="Common requests we handle"
         intro="Use these categories to guide your message subject or opening line."

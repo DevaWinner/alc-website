@@ -44,36 +44,30 @@ export const donationOptions: DonationOption[] = [
 ];
 
 export const donationImpact = [
-	"$25 helps cover one learner's class materials",
-	"$150 supports a laptop tune-up and accessories",
-	"$500 helps run a full beginner class cycle",
+	"$25 Sponsor a Teacher for a Class",
+	"$180 Pay for the cost of Microsoft Office for a new laptop",
+	"$500 Pay for a new laptop so we can expand our classrooms",
 ] as const;
 
 export const donationProofBlocks = [
 	{
 		metric: "$25",
-		title: "Protect one learner seat",
+		title: "Sponsor a Teacher for a Class",
 		detail:
-			"Helps cover materials, power/connectivity, and practical support for one learner in a class cycle.",
+			"Skilled teachers are difficult to find. Please sponsor a teacher for a class",
 	},
 	{
-		metric: "$150",
-		title: "Keep one laptop class-ready",
+		metric: "$180",
+		title: "Pay for the cost of Microsoft Office for a new laptop",
 		detail:
-			"Supports tune-up, accessories, and setup so lessons continue without technical interruption.",
+			"Covers the cost of essential productivity software for a new laptop to ensure learners are classroom-ready.",
 	},
 	{
 		metric: "$500",
-		title: "Back one full beginner cohort",
+		title: "Pay for a new laptop so we can expand our classrooms",
 		detail:
-			"Helps fund core delivery support for a complete class run serving multiple first-time learners.",
+			"Covers the cost of expanding our classrooms to reach more learners in need of digital skills.",
 	},
-] as const;
-
-export const donationUrgentNeeds = [
-	"Learner-seat sponsorship before the next intake begins",
-	"Laptop readiness support to reduce class downtime",
-	"Consumables and classroom essentials for uninterrupted sessions",
 ] as const;
 
 export const donationFlow = [

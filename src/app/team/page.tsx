@@ -2,7 +2,11 @@ import Image from "next/image";
 import { TeamGrid } from "@/components/sections/TeamGrid";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
-import { advisoryMentors, leadershipFeatures, programCoordinators } from "@/data/team";
+import {
+	advisoryMentors,
+	leadershipFeatures,
+	programCoordinators,
+} from "@/data/team";
 import { defaultBlurDataURL } from "@/lib/image";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -30,7 +34,10 @@ export default function TeamPage() {
 					{ href: "/contact", label: "Contact Leadership" },
 					{ href: "/donate", label: "Sponsor Programs" },
 				]}
-				image={{ src: "/img/gallery1.webp", alt: "ALC classroom collaboration" }}
+				image={{
+					src: "/img/gallery1.webp",
+					alt: "ALC classroom collaboration",
+				}}
 			/>
 
 			<Section
@@ -45,7 +52,9 @@ export default function TeamPage() {
 						<article
 							key={item.title}
 							className={`content-card ${
-								item.variant === "portrait" ? "team-card" : "team-card board-card"
+								item.variant === "portrait"
+									? "team-card"
+									: "team-card board-card"
 							} reveal-up reveal-delay-${(index % 3) + 1}`}
 						>
 							<Image
@@ -79,7 +88,7 @@ export default function TeamPage() {
 			<Section
 				title="Advisory and Mentors"
 				intro="Advisory mentors supporting program quality, learner confidence, and long-term follow-through."
-				className="section-tight"
+				className="section-tight section-alt"
 			>
 				<TeamGrid items={advisoryMentors} columns={3} />
 			</Section>

@@ -49,6 +49,16 @@ export const programCoordinators: TeamMember[] = [
 
 export const advisoryMentors: TeamMember[] = [
 	{
+		name: "Lawson and Ava Duce",
+		role: "Pohnpei Advisory Team",
+		image: "/img/lawson-ava.webp",
+	},
+	{
+		name: "Allen and Sheri Feller",
+		role: "Chuuk Advisory Team",
+		image: "/img/allen-sheri.webp",
+	},
+	{
 		name: "Bradley Kakazu",
 		role: "Advisory and Mentor",
 		image: "/img/bradley-kakazu.webp",

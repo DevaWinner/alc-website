@@ -32,14 +32,14 @@ export const navigation: NavItem[] = [
 	{ href: "/programs", label: "Programs" },
 	{ href: "/donate", label: "Donate" },
 	{ href: "/impact", label: "Impact" },
-	{ href: "/team", label: "Team and Leadership" },
+	{ href: "/team", label: "Leadership" },
 	{ href: "/contact", label: "Contact" },
 ];
 
 export const footerLinks: NavItem[] = [
 	{ href: "/programs", label: "Mission & Programs" },
 	{ href: "/impact", label: "Impact Stories" },
-	{ href: "/team", label: "Team and Leadership" },
+	{ href: "/team", label: "Leadership" },
 	{ href: "/donate", label: "Donate" },
 	{ href: "/contact", label: "Contact" },
 ];
